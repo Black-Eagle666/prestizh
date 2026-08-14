@@ -202,6 +202,7 @@
   .promo-band li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;background:var(--gold);border-radius:50%}
   .promo-band .pic{position:relative;min-height:320px}
   .promo-band .pic .photo{position:absolute;inset:0}
+  .promo-band .pic img{object-position:center top}
   @media (max-width:860px){.promo-band{grid-template-columns:1fr}.promo-band .pic{min-height:280px;order:-1}}
 
   /* ---------- About ---------- */
@@ -433,7 +434,13 @@
       <div><a class="pill light" href="#kontakt">Rezervovat termín</a></div>
     </div>
     <div class="pic">
-      <div class="photo" data-fill><div class="fill-salon" style="position:absolute;inset:0"></div><span class="plabel">Foto interiéru — DOPLNIT</span></div>
+      <div class="photo">
+        <picture>
+          <source type="image/webp" srcset="promo.webp">
+          <img src="promo.jpg" width="1400" height="952" loading="lazy" decoding="async"
+               alt="Klientka s dárkovou obálkou v salonu Prestiž, v pozadí kosmetické a kadeřnické ošetření">
+        </picture>
+      </div>
     </div>
   </div>
 </section>
