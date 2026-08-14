@@ -278,6 +278,9 @@
   footer .fnav{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin:0 0 1.3rem;padding:0;list-style:none}
   footer .fnav a{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,239,229,.7)}
   footer .fnav a:hover{color:var(--gold-soft)}
+  footer .flegal{gap:1.1rem;margin-top:-.4rem}
+  footer .flegal a{font-size:.58rem;letter-spacing:.14em;color:rgba(244,239,229,.45)}
+  footer .flegal a.ck-open{background:none;border:0;padding:0;cursor:pointer;font-family:inherit}
   footer .fsoc{display:flex;gap:1rem;justify-content:center;margin-bottom:1.3rem}
   footer .fsoc a{width:38px;height:38px;border:1px solid rgba(196,161,90,.35);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.25s}
   footer .fsoc a:hover{background:var(--gold);border-color:var(--gold);color:#fff}
@@ -563,6 +566,12 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg>
       </a>
     </div>
+    <ul class="fnav flegal">
+      <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="podminky-uziti.html">Podmínky užití</a>
+      <a href="#" class="ck-open">Nastavení cookies</a>
+    </ul>
     <small>© <span id="yr"></span> Salón krásy Prestiž · Pardubice, Česká republika</small>
   </div>
 </footer>
@@ -610,3 +619,4 @@
 
   document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
+<script src="consent.js" defer></script>
