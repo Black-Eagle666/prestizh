@@ -125,6 +125,8 @@
   .photo{position:relative;overflow:hidden;background:var(--cream-2)}
   .photo::before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s ease}
   .photo[data-fill]:hover::before{transform:scale(1.05)}
+  .photo>img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s ease}
+  .photo:hover>img{transform:scale(1.05)}
   .photo .plabel{position:absolute;left:0;bottom:0;padding:.45rem .8rem;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);background:linear-gradient(transparent,rgba(75,60,45,.55));width:100%}
   .fill-model{background:radial-gradient(120% 90% at 70% 20%,#c9b89c,transparent 60%),linear-gradient(150deg,#8f7a5e,#5f4d3a)}
   .fill-hair{background:linear-gradient(150deg,#b59d7c,#6e5943)}
@@ -344,17 +346,35 @@
     </div>
     <div class="feat">
       <article class="card reveal">
-        <div class="photo" data-fill><div class="fill-hair" style="position:absolute;inset:0"></div><span class="plabel">Foto — DOPLNIT</span></div>
+        <div class="photo">
+          <picture>
+            <source type="image/webp" srcset="sluzba-vlasy.webp">
+            <img src="sluzba-vlasy.jpg" width="760" height="1013" loading="lazy" decoding="async"
+                 alt="Kadeřník tvaruje klientce vlasy fénem a kulatým kartáčem v salonu Prestiž">
+          </picture>
+        </div>
         <h3>Kadeřnictví</h3>
         <p>Střihy, barvení, melír, styling a hloubková péče o vlasy pro dámy i pány.</p>
       </article>
       <article class="card reveal">
-        <div class="photo" data-fill><div class="fill-skin" style="position:absolute;inset:0"></div><span class="plabel">Foto — DOPLNIT</span></div>
+        <div class="photo">
+          <picture>
+            <source type="image/webp" srcset="sluzba-plet.webp">
+            <img src="sluzba-plet.jpg" width="760" height="1013" loading="lazy" decoding="async"
+                 alt="Kosmetička provádí ošetření pleti klientce ležící na lehátku">
+          </picture>
+        </div>
         <h3>Kosmetika &amp; pleť</h3>
         <p>Hloubkové čištění, hydratační a omlazující ošetření pleti na míru.</p>
       </article>
       <article class="card reveal">
-        <div class="photo" data-fill><div class="fill-nails" style="position:absolute;inset:0"></div><span class="plabel">Foto — DOPLNIT</span></div>
+        <div class="photo">
+          <picture>
+            <source type="image/webp" srcset="sluzba-nehty.webp">
+            <img src="sluzba-nehty.jpg" width="760" height="1013" loading="lazy" decoding="async"
+                 alt="Manikérka provádí klientce manikúru u mramorového stolu">
+          </picture>
+        </div>
         <h3>Nehty &amp; řasy</h3>
         <p>Manikúra, nehtová modeláž, prodlužování řas a úprava obočí.</p>
       </article>
