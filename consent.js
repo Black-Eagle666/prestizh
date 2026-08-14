@@ -56,6 +56,7 @@
       'font-family:"Futura","Century Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;' +
       'transition:transform .45s cubic-bezier(.22,1,.36,1);opacity:0}' +
       '.ck-bar.is-on{transform:translateX(-50%) translateY(0);opacity:1}' +
+      '@media (prefers-reduced-motion:reduce){.ck-bar{transition:opacity .2s}}' +
       '.ck-bar h4{font-family:"Bodoni 72","Didot","Cormorant Garamond",Georgia,serif;font-weight:400;' +
       'font-size:1.15rem;margin:0 0 .4rem}' +
       '.ck-bar p{margin:0 0 1rem;font-size:.84rem;line-height:1.6;color:#4B3C2D}' +
@@ -65,6 +66,7 @@
       'padding:.85em 1.7em;border-radius:999px;cursor:pointer;border:1px solid #4B3C2D;background:none;' +
       'color:#4B3C2D;transition:background .2s,color .2s}' +
       '.ck-btn:hover{background:#4B3C2D;color:#F4EFE5}' +
+      '.ck-btn:focus-visible{outline:2px solid #A9823A;outline-offset:2px}' +
       '.ck-btn.primary{background:#4B3C2D;color:#F4EFE5}' +
       '.ck-btn.primary:hover{background:#A9823A;border-color:#A9823A}' +
       '@media(max-width:520px){.ck-bar{padding:1.1rem 1.1rem}.ck-act{flex-direction:column}.ck-btn{width:100%}}';

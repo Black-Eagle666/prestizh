@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# DOPLNIT: nahraďte skutečnou doménou
+Sitemap: https://www.salonkrasyprestiz.cz/sitemap.xml
