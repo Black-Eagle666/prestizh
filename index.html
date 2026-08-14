@@ -115,11 +115,12 @@
   /* ---------- Nav ---------- */
   header.nav{position:sticky;top:0;z-index:60;background:rgba(244,239,229,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .nav-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;padding:.5rem 0}
-  .nav-left,.nav-right{display:flex;align-items:center;gap:1.9rem}
+  .nav-left,.nav-right{display:flex;align-items:center;gap:.7rem}
   .nav-right{justify-content:flex-end}
-  .nav a.link{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--text);position:relative;padding:.4rem 0}
-  .nav a.link::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .25s}
-  .nav a.link:hover::after{width:100%}
+  .nav a.link{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--text);
+    padding:.7em 1.5em;border:1px solid var(--line);border-radius:40px;white-space:nowrap;
+    transition:background .3s ease,color .3s ease,border-color .3s ease}
+  .nav a.link:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
   .brand{display:flex;justify-content:center;align-items:center}
   .brand .logo{height:66px;width:auto;display:block}
   .brand svg.logo{height:70px}
